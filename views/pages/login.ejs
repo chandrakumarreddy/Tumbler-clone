@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Login</title>
+		<link rel="stylesheet" href="/css/main.css" />
+	</head>
+	<body>
+		<div class="login-container">
+			<div class="login-wrapper">
+				<div class="login-form">
+					<form action="/login" method="post">
+						<div class="login-logo">
+							<img src="/images/login.png" alt="login" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input
+								type="text"
+								placeholder="Email"
+								id="username"
+								name="email"
+							/>
+						</div>
+						<div class="field">
+							<label for="password">Password</label>
+							<input
+								type="password"
+								placeholder="password"
+								id="password"
+								name="password"
+							/>
+						</div>
+						<div class="field">
+							<button type="submit">Login</button>
+							<div class="google-plus">
+								<a href="/auth/google"
+									><img
+										src="/images/googlePlus.png"
+										alt="google-plus"
+								/></a>
+							</div>
+						</div>
+						<div class="login-error">
+							<%= errors.message%>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
